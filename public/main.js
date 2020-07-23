@@ -32,6 +32,8 @@ touchMove = (event) => {
     const x = (y2 - y1) / 5;
     cubeRotate(x, y);
   }, 50);
+  target1 = "";
+  target2 = "";
 };
 
 move = (event) => {
