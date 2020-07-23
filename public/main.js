@@ -84,6 +84,9 @@ getRotationData = function (targ1, targ2) {
     for (let i = 0; i < 6; i++) {
       if (string2[i] !== string1[i]) {
         direction = +string1[i] - string2[i];
+        if (Math.abs(direction) === 2) {
+          direction = direction / 2;
+        }
         rot = string1[i - 1];
         i = 5;
       }
